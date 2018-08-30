@@ -1,21 +1,26 @@
 import React from 'react';
-import { Footer, FooterTab, Button, Text } from 'native-base';
+import { Footer, FooterTab, Button } from 'native-base';
+import Home from './Home';
+import Calendar from './Calendar';
+import Contact from './Contact';
+import Sponsors from './Sponsors';
 
 export const ICEFooter = (props) => {
   return (
     <Footer>
       <FooterTab>
-        <Button active>
-          <Text>Home</Text>
+        <Button
+        onPress={() => props.navigation.navigate("Home")}>>
+          
         </Button>
         <Button>
-          <Text>Calendar</Text>
+          <Calendar />
         </Button>
         <Button>
-          <Text>Contact</Text>
+          <Contact />
         </Button>
         <Button>
-          <Text>Sponsors</Text>
+          <Sponsors />
         </Button>
       </FooterTab>
     </Footer>
