@@ -11,25 +11,25 @@ export default class App extends Component {
   render() {
     return (
       <Container>
-        <Header hasTabs>
+        <Header hasTabs style={{ backgroundColor: "#EAA825" }}>
           <Left/>
-          <Body style={styles.container}>
+          <Body>
             <Title>Test</Title>
           </Body>
           <Right />
         </Header>
 
-        <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{borderBottomColor: 'black'}}>
-          <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
+        <Tabs tabBarPosition="bottom">
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white" }} /></TabHeading>}>
             <Home />
           </Tab>
-          <Tab heading={ <TabHeading><Icon name="calendar" /></TabHeading>}>
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="calendar" style={{ color: "white" }} /></TabHeading>}>
             <Calendar />
           </Tab>
-          <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white" }} /></TabHeading>}>
             <Contact />
           </Tab>
-          <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white" }} /></TabHeading>}>
             <Sponsors />
           </Tab>
         </Tabs>
@@ -37,10 +37,3 @@ export default class App extends Component {
     );
   }  
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'green',
-  },
-});
