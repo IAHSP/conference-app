@@ -1,59 +1,46 @@
-import React from 'react';
-import { View } from 'react-native';
-import { createBottomTabNavigator } from 'react-navigation';
+import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { Body, Container, Header, Icon, Left, Right, Tab, Tabs, TabHeading, Title } from 'native-base';
 
 import Home from './src/components/Home';
 import Calendar from './src/components/Calendar';
 import Contact from './src/components/Contact';
 import Sponsors from './src/components/Sponsors';
 
-// Gets rid of the yellow warning error
-import { YellowBox } from 'react-native';
-YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
-
-class HomeScreen extends React.Component {
+export default class App extends Component {
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Home />
-      </View>
+      <Container>
+        <Header hasTabs>
+          <Left/>
+          <Body style={styles.container}>
+            <Title>Test</Title>
+          </Body>
+          <Right />
+        </Header>
+
+        <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{borderBottomColor: 'black'}}>
+          <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
+            <Home />
+          </Tab>
+          <Tab heading={ <TabHeading><Icon name="calendar" /></TabHeading>}>
+            <Calendar />
+          </Tab>
+          <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
+            <Contact />
+          </Tab>
+          <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
+            <Sponsors />
+          </Tab>
+        </Tabs>
+      </Container>
     );
-  }
+  }  
 }
 
-class CalendarScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Calendar />
-      </View>
-    );
-  }
-}
-
-class ContactScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Contact />
-      </View>
-    );
-  }
-}
-
-class SponsorsScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Sponsors />
-      </View>
-    );
-  }
-}
-
-export default createBottomTabNavigator({
-  Home: HomeScreen,
-  Calendar: CalendarScreen,
-  Contact: ContactScreen,
-  Sponsors: SponsorsScreen,
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'green',
+  },
 });
