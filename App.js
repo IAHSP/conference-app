@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
-import { Body, Container, Header, Icon, Left, Right, Tab, Tabs, TabHeading, Title } from 'native-base';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Body, Container, Header, Left, Right, Tab, Tabs, TabHeading, Title, View } from 'native-base';
 
 import Home from './src/components/Home';
 import Calendar from './src/components/Calendar';
@@ -20,17 +20,25 @@ export default class App extends Component {
         </Header>
 
         <Tabs tabBarPosition="bottom">
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white" }} /></TabHeading>}>
-            <Home />
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white", fontSize: 28 }} /></TabHeading>}>
+            <View style={{ padding: 10 }}>
+              <Home />
+            </View>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="calendar" style={{ color: "white" }} /></TabHeading>}>
-            <Calendar />
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="calendar" style={{ color: "white", fontSize: 20 }} /></TabHeading>}>
+            <View style={{ padding: 10 }}>
+              <Calendar />
+            </View>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white" }} /></TabHeading>}>
-            <Contact />
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="phone" style={{ color: "white", fontSize: 25 }} /></TabHeading>}>
+            <View style={{ padding: 10 }}>
+              <Contact />
+            </View>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white" }} /></TabHeading>}>
-            <Sponsors />
+          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="info-circle" style={{ color: "white", fontSize: 25 }} /></TabHeading>}>
+            <View style={{ padding: 10 }}>
+              <Sponsors />
+            </View>
           </Tab>
         </Tabs>
       </Container>
