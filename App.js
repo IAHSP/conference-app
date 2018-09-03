@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Body, Container, Header, Left, Right, Tab, Tabs, TabHeading, Title, View } from 'native-base';
+import { Body, Container, Header, Content, Tab, Tabs, TabHeading, Title, View } from 'native-base';
 
 import Home from './src/components/Home';
-import Calendar from './src/components/Calendar';
+import Schedule from './src/components/Schedule';
 import Contact from './src/components/Contact';
 import Sponsors from './src/components/Sponsors';
 
@@ -11,34 +11,40 @@ export default class App extends Component {
   render() {
     return (
       <Container>
-        <Header hasTabs style={{ backgroundColor: "#EAA825" }}>
-          <Left/>
+        <Header hasTabs androidStatusBarColor="black" style={{ backgroundColor: "white" }}>          
           <Body>
-            <Title>Test</Title>
-          </Body>
-          <Right />
+            <Title style={{ alignSelf: "center", color: "black" }}>Test</Title>
+          </Body>          
         </Header>
 
-        <Tabs tabBarPosition="bottom">
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="home" style={{ color: "white", fontSize: 28 }} /></TabHeading>}>
-            <View style={{ padding: 10 }}>
-              <Home />
-            </View>
+        <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
+          <Tab topTabBarActiveTextColor={{ color: "black" }} heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="home" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+            <Content style={{ backgroundColor: "#F3F3F4" }}>
+              <View style={{ padding: 10 }}>
+                <Home />
+              </View>
+            </Content>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="calendar" style={{ color: "white", fontSize: 20 }} /></TabHeading>}>
-            <View style={{ padding: 10 }}>
-              <Calendar />
-            </View>
+          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="calendar" style={{ color: "#909294", fontSize: 30 }} /></TabHeading>}>
+            <Content style={{ backgroundColor: "#F3F3F4" }}>
+              <View style={{ padding: 10 }}>
+                <Schedule />
+              </View>
+            </Content>
+          </Tab>          
+          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="phone-square" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+            <Content style={{ backgroundColor: "#F3F3F4" }}>
+              <View style={{ padding: 10 }}>
+                <Contact />
+              </View>
+            </Content>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="phone" style={{ color: "white", fontSize: 25 }} /></TabHeading>}>
-            <View style={{ padding: 10 }}>
-              <Contact />
-            </View>
-          </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "#EAA825" }}><Icon name="info-circle" style={{ color: "white", fontSize: 25 }} /></TabHeading>}>
-            <View style={{ padding: 10 }}>
-              <Sponsors />
-            </View>
+          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="info-circle" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+            <Content style={{ backgroundColor: "#F3F3F4" }}>
+              <View style={{ padding: 10 }}>
+                <Sponsors />
+              </View>
+            </Content>
           </Tab>
         </Tabs>
       </Container>
