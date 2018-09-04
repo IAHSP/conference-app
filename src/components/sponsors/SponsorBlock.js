@@ -21,13 +21,11 @@ export class SponsorCard extends Component {
 }
 
 export class SponsorBlock extends Component {
-  render() {
+  render(props) {
     return (
-      <Col>
+      <Col style={{flex: .5}}>
         <View>
-          <Text style={{textAlign: 'center'}}>
-            This is a sponsor block.
-          </Text>
+          {this.props.children}
         </View>
       </Col>
     );
