@@ -18,7 +18,7 @@ export default class App extends Component {
         </Header>
 
         <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
-          <Tab topTabBarActiveTextColor={{ color: "black" }} heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="home" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="home" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Home />
