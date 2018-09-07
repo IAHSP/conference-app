@@ -17,29 +17,29 @@ export default class App extends Component {
           </Body>          
         </Header>
 
-        <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="home" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+        <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{ backgroundColor: "#EAA825" }}>
+          <Tab heading="Home" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Home />
               </View>
             </Content>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="calendar" style={{ color: "#909294", fontSize: 30 }} /></TabHeading>}>
+          <Tab heading="Schedule" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Schedule />
               </View>
             </Content>
           </Tab>          
-          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="phone-square" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+          <Tab heading="Contact" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Contact />
               </View>
             </Content>
           </Tab>
-          <Tab heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="info-circle" style={{ color: "#909294", fontSize: 38 }} /></TabHeading>}>
+          <Tab heading="Sponsors" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Sponsors />
