@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Body, Container, Header, Content, Tab, Tabs, TabHeading, Title, View } from 'native-base';
+import { Body, Container, Header, Content, Tab, Tabs, Title, Subtitle, View } from 'native-base';
 
 import Home from './src/components/Home';
 import Schedule from './src/components/Schedule';
@@ -8,12 +8,17 @@ import Contact from './src/components/Contact';
 import Sponsors from './src/components/Sponsors';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
   render() {
     return (
       <Container>
         <Header hasTabs androidStatusBarColor="black" style={{ backgroundColor: "white" }}>          
           <Body>
-            <Title style={{ alignSelf: "center", color: "black" }}>Test</Title>
+            <Title style={{ alignSelf: "center", color: "black" }}>IAHSP Conference 2018</Title>
+            <Subtitle>October 18-20, 2018</Subtitle>
           </Body>          
         </Header>
 
