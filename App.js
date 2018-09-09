@@ -19,10 +19,8 @@ export default class App extends Component {
 
         <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{ backgroundColor: "#EAA825" }}>
           <Tab heading="Home" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
-            <Content style={{ backgroundColor: "#F3F3F4" }}>
-              <View style={{ padding: 10 }}>
-                <Home />
-              </View>
+            <Content padder style={{ backgroundColor: "#F3F3F4" }}>              
+              <Home />              
             </Content>
           </Tab>
           <Tab heading="Schedule" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
