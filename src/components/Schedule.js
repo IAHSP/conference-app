@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Text } from 'native-base';
 
-export default class Calendar extends Component {
+export default class Schedule extends Component {
   render() {
     return (
       <Text>
-          Calendar
+          Schedule
       </Text>
     );
   }
