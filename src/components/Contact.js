@@ -82,7 +82,8 @@ export default class Contact extends Component {
             </CardItem>
 
             <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
+         <Button small onPress={() => Linking.openURL('mailto:support@example.com') }
+      title="support@example.com" style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
            <Text uppercase={false}>Call Duane Kaupp</Text>
          </Button>
 
