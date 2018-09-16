@@ -7,10 +7,11 @@ export default class Sponsors extends Component {
   render() {
     return (
       <Content>
-        <Text style={{textAlign: 'center', marginVertical: 20}}>Sponsor Title</Text>
+        <Text style={{textAlign: 'center', marginVertical: 20}}>Sponsors</Text>
         <SponsorCard title="Premiere Platinum Sponsors">
           <SponsorBlock>
             <Image
+              style={{width: '100%', height: '100%'}}
               source={require('../images/sponsor-logos/classic-home.png')}
               resizeMode={'contain'}
             />
