@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
 import { Content, Text } from 'native-base';
-import { SponsorCard, SponsorBlock } from './sponsors/SponsorBlock';
+import { SponsorCard, SponsorBlock, SponsorRow } from './sponsors/SponsorBlock';
 
 export default class Sponsors extends Component {
   render() {
@@ -9,85 +8,34 @@ export default class Sponsors extends Component {
       <Content>
         <Text style={{textAlign: 'center', marginVertical: 20}}>Sponsors</Text>
         <SponsorCard title="Premiere Platinum Sponsors">
-          <SponsorBlock>
-            <Image
-              style={{width: '100%', height: '100%'}}
-              source={require('../images/sponsor-logos/classic-home.png')}
-              resizeMode={'contain'}
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/coaster-furniture.jpg')}
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/classic-home.png')}
-              resizeMode={'contain'}
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/coaster-furniture.jpg')}
-            />
-          </SponsorBlock>
+          <SponsorRow>
+            <SponsorBlock src={require('../images/sponsor-logos/classic-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/coaster-furniture.jpg')} />
+          </SponsorRow>
+          <SponsorRow>
+            <SponsorBlock src={require('../images/sponsor-logos/classic-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/coaster-furniture.jpg')} />
+          </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Platinum Sponsors">
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/classic-home.png')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/coaster-furniture.jpg')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
-        </SponsorCard>
-        <SponsorCard title="Gold Sponsors">
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/classic-home.png')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/coaster-furniture.jpg')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
+          <SponsorRow>
+            <SponsorBlock src={require('../images/sponsor-logos/classic-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/coaster-furniture.jpg')} />
+          </SponsorRow>
+          <SponsorRow>
+            <SponsorBlock src={require('../images/sponsor-logos/classic-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/coaster-furniture.jpg')} />
+          </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Silver Sponsors">
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/classic-home.png')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/coaster-furniture.jpg')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
-        </SponsorCard>
-        <SponsorCard title="Bronze Sponsors">
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/classic-home.png')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
-          <SponsorBlock>
-            <Image
-              source={require('../images/sponsor-logos/coaster-furniture.jpg')}
-              resizeMode="contain"
-            />
-          </SponsorBlock>
+          <SponsorRow>
+            <SponsorBlock src={require('../images/sponsor-logos/classic-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/coaster-furniture.jpg')} />
+          </SponsorRow>
+          <SponsorRow>
+            <SponsorBlock src={require('../images/sponsor-logos/classic-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/coaster-furniture.jpg')} />
+          </SponsorRow>
         </SponsorCard>
       </Content>
     );

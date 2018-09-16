@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, Card, CardItem, Body, Grid, Col } from 'native-base';
+import { Image } from 'react-native';
+import { Text, View, Card, CardItem, Body } from 'native-base';
+import { Grid, Col } from 'react-native-easy-grid';
 
 export class SponsorCard extends Component {
   render(props) {
@@ -11,7 +13,7 @@ export class SponsorCard extends Component {
           </CardItem>
           <CardItem>
             <Body>
-              <Grid>{this.props.children}</Grid>
+              {this.props.children}
             </Body>
           </CardItem>
         </Card>
@@ -20,12 +22,27 @@ export class SponsorCard extends Component {
   }
 }
 
+export class SponsorRow extends Component {
+  render(props) {
+    return (
+      <Grid>{this.props.children}</Grid>
+    );
+  }
+}
+
 export class SponsorBlock extends Component {
   render(props) {
     return (
-      <Col style={{flex: .5}}>
+      <Col style={{
+        paddingVertical: 0,
+        paddingHorizontal: 10
+      }}>
         <View>
-          {this.props.children}
+          <Image
+            style={{width: '100%', height: 100}}
+            source={this.props.src}
+            resizeMode={'contain'}
+          />
         </View>
       </Col>
     );
