@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, Linking } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text, Body, View, Button } from "native-base";
 
 export default class Contact extends Component {
+
+  // helper method for mailto and phone call
+  static async openURL(url: string): Promise<void> {
+      try {
+        await Linking.openURL(url);
+      } catch (error) {
+        console.log(error);
+      }
+  }
+
+
   render() {
     return (
       <ScrollView style={{flex:1}}>
@@ -16,7 +27,7 @@ export default class Contact extends Component {
         <Content padder>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:30}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
               <Text style={{color: 'white'}}>More Information About IAHSP 2018</Text>
             </CardItem>
             <CardItem>
@@ -30,17 +41,20 @@ export default class Contact extends Component {
             </CardItem>
 
             <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
+         <Button small
+             onPress={() => Linking.openURL('tel:844-IAHSP99')}
+            style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
            <Text uppercase={false}>Call</Text>
          </Button>
-         <Button small style={{ backgroundColor: '#EAA825' }}>
+         <Button small onPress={ ()=>{
+                Linking.openURL("mailto:christa@IAHSP.com")}} style={{ backgroundColor: '#EAA825' }}>
            <Text uppercase={false}>Email</Text>
          </Button>
        </View>
           </Card>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:30}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
               <Text style={{color: 'white'}}>IAHSP Conference</Text>
             </CardItem>
             <CardItem>
@@ -59,17 +73,20 @@ export default class Contact extends Component {
             </CardItem>
 
             <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
+         <Button small
+                 onPress={() => Linking.openURL('tel:704-335-2037')}
+           style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
            <Text uppercase={false}>Call</Text>
          </Button>
-         <Button small style={{ backgroundColor: '#EAA825' }}>
+         <Button small onPress={ ()=>{
+                Linking.openURL("mailto:Danae.Kaupp1@westin.com")}}style={{ backgroundColor: '#EAA825' }}>
            <Text uppercase={false}>Email</Text>
          </Button>
        </View>
           </Card>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:30}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
               <Text style={{color: 'white'}}>Westin Charlotte Hotel</Text>
             </CardItem>
             <CardItem>
@@ -82,7 +99,7 @@ export default class Contact extends Component {
             </CardItem>
 
             <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small onPress={() => Linking.openURL('mailto:support@example.com') }
+         <Button small onPress={() => Linking.openURL('tel:704-335-2037') }
       title="support@example.com" style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
            <Text uppercase={false}>Call Duane Kaupp</Text>
          </Button>
