@@ -49,3 +49,26 @@ export class SponsorBlock extends Component {
   }
 }
 
+export class SponsorBlockSingle extends Component {
+  render(props) {
+    return (
+      <Col style={{
+        paddingVertical: 0,
+        paddingHorizontal: 10
+      }}>
+        <View>
+          <Image
+            style={{
+              width: '50%',
+              height: 100,
+              marginLeft: '25%'
+            }}
+            source={this.props.src}
+            resizeMode={'contain'}
+          />
+        </View>
+      </Col>
+    );
+  }
+}
+
