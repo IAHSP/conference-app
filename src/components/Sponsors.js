@@ -23,7 +23,7 @@ export default class Sponsors extends Component {
         <SponsorCard title="Platinum Sponsors">
           <SponsorRow>
             <SponsorBlock src={require('../images/sponsor-logos/platinum/dalyn-rug-logo.jpg')} />
-            <SponsorBlock src={require('../images/sponsor-logos/platinum/orient-express-and-star-international-logos.jpg')} />
+            <SponsorBlock src={require('../images/sponsor-logos/platinum/essentials-for-living-logo-2018-l.jpg')} />
           </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Gold Sponsors">

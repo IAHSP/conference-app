@@ -17,8 +17,7 @@ export default class App extends Component {
       <Container>
         <Header hasTabs androidStatusBarColor="black" style={{ backgroundColor: "white" }}>          
           <Body>
-            <Title style={{ alignSelf: "center", color: "black" }}>IAHSP Conference 2018</Title>
-            <Subtitle>October 18-20, 2018</Subtitle>
+            <Title style={{ alignSelf: "center", color: "black" }}>IAHSP Conference</Title>
           </Body>          
         </Header>
 
