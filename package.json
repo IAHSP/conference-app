@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "react-native run-ios",
+    "ipad": "react-native run-ios --simulator='iPad Air 2'",
     "test": "jest"
   },
   "dependencies": {
@@ -15,7 +16,7 @@
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
-    "babel-preset-react-native": "^4.0.0",
+    "babel-preset-react-native": "^4.0.1",
     "jest": "23.5.0",
     "react-test-renderer": "16.4.1"
   },
