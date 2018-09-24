@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Text, Body, View, Button, Accordion, Icon } from "native-base";
+import { Content, Card, CardItem, Text, Body, View, Button, Accordion, Icon } from "native-base";
 
 
 

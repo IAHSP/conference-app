@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, Linking } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Text, Body, View, Button } from "native-base";
+import { Content, Card, CardItem, Text, Body, View, Button } from "native-base";
 
 export default class Contact extends Component {
 
@@ -101,7 +101,7 @@ export default class Contact extends Component {
             <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
          <Button small onPress={() => Linking.openURL('tel:704-335-2037') }
       title="support@example.com" style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
-           <Text uppercase={false}>Call Duane Kaupp</Text>
+           <Text uppercase={false}>Call Danae Kaupp</Text>
          </Button>
 
        </View>
