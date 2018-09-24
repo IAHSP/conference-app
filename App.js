@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { Body, Container, Header, Content, Tab, Tabs, TabHeading, Title, View } from 'native-base';
+import { Body, Container, Header, Content, Tab, Tabs, Title, View } from 'native-base';
 
 import Home from './src/components/Home';
 import Schedule from './src/components/Schedule';
@@ -11,33 +10,55 @@ export default class App extends Component {
   render() {
     return (
       <Container>
-        <Header hasTabs androidStatusBarColor="black" style={{ backgroundColor: "white" }}>          
+        <Header hasTabs 
+                androidStatusBarColor="black" 
+                style={{ backgroundColor: "white" }}>          
           <Body>
-            <Title style={{ alignSelf: "center", color: "black" }}>Test</Title>
+            <Title style={{ alignSelf: "center", color: "black" }}>
+              Test
+            </Title>
           </Body>          
         </Header>
 
-        <Tabs tabBarPosition="bottom" tabBarUnderlineStyle={{ backgroundColor: "#EAA825" }}>
-          <Tab heading="Home" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
-            <Content padder style={{ backgroundColor: "#F3F3F4" }}>              
+        <Tabs tabBarPosition="bottom" 
+              tabBarUnderlineStyle={{ backgroundColor: "#EAA825" }}>
+          <Tab heading="Home" 
+               tabStyle={{backgroundColor: 'white'}} 
+               textStyle={{color: '#909294'}} 
+               activeTabStyle={{backgroundColor: 'white'}} 
+               activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
+            <Content padder 
+                     style={{ backgroundColor: "#F3F3F4" }}>              
               <Home />              
             </Content>
           </Tab>
-          <Tab heading="Schedule" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
+          <Tab heading="Schedule" 
+               tabStyle={{backgroundColor: 'white'}} 
+               textStyle={{color: '#909294'}} 
+               activeTabStyle={{backgroundColor: 'white'}} 
+               activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Schedule />
               </View>
             </Content>
           </Tab>          
-          <Tab heading="Contact" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
+          <Tab heading="Contact" 
+               tabStyle={{backgroundColor: 'white'}} 
+               textStyle={{color: '#909294'}} 
+               activeTabStyle={{backgroundColor: 'white'}} 
+               activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Contact />
               </View>
             </Content>
           </Tab>
-          <Tab heading="Sponsors" tabStyle={{backgroundColor: 'white'}} textStyle={{color: '#909294'}} activeTabStyle={{backgroundColor: 'white'}} activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
+          <Tab heading="Sponsors" 
+               tabStyle={{backgroundColor: 'white'}} 
+               textStyle={{color: '#909294'}} 
+               activeTabStyle={{backgroundColor: 'white'}} 
+               activeTextStyle={{color: '#EAA825', fontWeight: 'bold'}}>
             <Content style={{ backgroundColor: "#F3F3F4" }}>
               <View style={{ padding: 10 }}>
                 <Sponsors />
