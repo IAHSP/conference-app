@@ -1,4 +1,5 @@
 {
   "name": "AwesomeProject",
-  "displayName": "IAHSP Conference"
+  "displayName": "AwesomeProject",
+  "orientation": "portrait"
 }
