@@ -27,7 +27,7 @@ export default class Contact extends Component {
         <Content padder>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
               <Text style={{color: 'white'}}>More Information About IAHSP 2018</Text>
             </CardItem>
             <CardItem>
@@ -54,7 +54,7 @@ export default class Contact extends Component {
           </Card>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
               <Text style={{color: 'white'}}>IAHSP Conference</Text>
             </CardItem>
             <CardItem>
@@ -86,7 +86,7 @@ export default class Contact extends Component {
           </Card>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
               <Text style={{color: 'white'}}>Westin Charlotte Hotel</Text>
             </CardItem>
             <CardItem>
