@@ -19,7 +19,7 @@ export default class App extends Component {
                 style={{ backgroundColor: "white" }}>          
           <Body>
             <Title style={{ alignSelf: "center", color: "black" }}>
-              IAHSP Conference
+              IAHSP Conference &amp; Expo
             </Title>
           </Body>          
         </Header>

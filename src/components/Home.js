@@ -32,7 +32,7 @@ export default class Home extends Component {
 
         {/* Centering buttons */}
         <View style={{ flexDirection: "row", justifyContent: 'center' }}>
-          <Button small onPress={ ()=>{ Linking.openURL('https://google.com')}} style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
+          <Button small onPress={ ()=>{ Linking.openURL('https://pages.iahsp.com/iahsp-conference-2018-registration/')}} style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
             <Text uppercase={false}>Sign up NOW</Text>
           </Button>
         </View>
