@@ -33,7 +33,7 @@ export default class Schedule extends Component {
   _renderHeader(item, expanded) {
  return (
    <View
-     style={{ flexDirection: "row", padding: 10, justifyContent: "space-between", alignItems: "center", backgroundColor: "#EAA825", height:40 }}
+     style={{ flexDirection: "row", padding: 10, justifyContent: "space-between", alignItems: "center", backgroundColor: "#EAA825", height:50 }}
    >
      <Text style={{ fontWeight: "600", color: "white" }}>
        {" "}{item.a}
@@ -75,7 +75,7 @@ _renderContent(item) {
           </View>
 
           <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825', height:40}}>
+            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
               <Text style={{color: 'white'}}>4:30-10 PM</Text>
             </CardItem>
 
