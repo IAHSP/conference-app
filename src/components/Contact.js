@@ -24,97 +24,66 @@ export default class Contact extends Component {
             </Text>
           </View>
 
-        <Content padder>
+          <Content padder>
+            <Card>
+              <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
+                <Text style={{color: 'white'}}>More Information About IAHSP 2018</Text>
+              </CardItem>
+              <CardItem>
+                <Body>
+                  <Text>
+                  For more information about the IAHSP 2018 conference,
+                  contact Christa at 844-IAHSP99 or through her email
+                  Christa@IAHSP.com
+                  </Text>
+                </Body>
+              </CardItem>
 
-          <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
-              <Text style={{color: 'white'}}>More Information About IAHSP 2018</Text>
-            </CardItem>
-            <CardItem>
-              <Body>
-                <Text>
-                For more information about the IAHSP 2018 conference,
-                contact Christa at 844-IAHSP99 or through her email
-                Christa@IAHSP.com
-                </Text>
-              </Body>
-            </CardItem>
+              <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
+                <Button small
+                    onPress={() => Linking.openURL('tel:844-IAHSP99')}
+                    style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
+                  <Text uppercase={false}>Call</Text>
+                </Button>
+                <Button small onPress={ ()=>{ Linking.openURL("mailto:christa@IAHSP.com") }} style={{ backgroundColor: '#EAA825' }}>
+                  <Text uppercase={false}>Email</Text>
+                </Button>
+              </View>
+            </Card>
 
-            <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small
-             onPress={() => Linking.openURL('tel:844-IAHSP99')}
-            style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
-           <Text uppercase={false}>Call</Text>
-         </Button>
-         <Button small onPress={ ()=>{
-                Linking.openURL("mailto:christa@IAHSP.com")}} style={{ backgroundColor: '#EAA825' }}>
-           <Text uppercase={false}>Email</Text>
-         </Button>
-       </View>
-          </Card>
+            <Card>
+              <CardItem header bordered style={{backgroundColor: '#4080FF'}}>
+                <Text style={{color: 'white'}}>IAHSP Facebook</Text>
+              </CardItem>
+              <CardItem>
+                <Body>
+                  <Text>
+                    IAHSP Mission is to provide standards for excellence, ethics and education in the Home Staging 
+                    industry, as well as resources for our members to grow and thrive.
+                  </Text>
+                  <Text>
+                    Let us know you'll be coming and share your experience!
+                  </Text>
+                </Body>
+              </CardItem>
 
-          <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
-              <Text style={{color: 'white'}}>IAHSP Conference</Text>
-            </CardItem>
-            <CardItem>
-              <Body>
-                <Text>
-                Event Date: October 18-20, 2018{"\n"}{"\n"}
-                The Group Rate is available Arriving Thursday October
-                18th and Friday, Oct 19th, 2018. We had a smaller block
-                for Saturday that is sold out BUT there are plenty of rooms
-                available for Saturday at our negotiated rate. To get a
-                room for Saturday at our negotiated rate you must contact
-                our conference coordinator: Danae Kaupp at 704.335.2037
-                or Danae.Kaupp1@westin.com
-                </Text>
-              </Body>
-            </CardItem>
+              <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
+                <Button small
+                    onPress={() => Linking.openURL('https://www.facebook.com/InternationalAssociationofHomeStagingProfessionals/')}
+                    style={{ marginRight: 5, backgroundColor: '#4080FF' }}>
+                  <Text uppercase={false}>Share on Facebook</Text>
+                </Button>
+              </View>
+            </Card>
 
-            <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small
-                 onPress={() => Linking.openURL('tel:704-335-2037')}
-           style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
-           <Text uppercase={false}>Call</Text>
-         </Button>
-         <Button small onPress={ ()=>{
-                Linking.openURL("mailto:Danae.Kaupp1@westin.com")}}style={{ backgroundColor: '#EAA825' }}>
-           <Text uppercase={false}>Email</Text>
-         </Button>
-       </View>
-          </Card>
+            
 
-          <Card>
-            <CardItem header bordered style={{backgroundColor: '#EAA825'}}>
-              <Text style={{color: 'white'}}>Westin Charlotte Hotel</Text>
-            </CardItem>
-            <CardItem>
-              <Body>
-                <Text>
-                Please make your reservations by calling Danae Kaupp
-                at 704-335-2037 and asking for the IAHSP 2018 Room Block
-                </Text>
-              </Body>
-            </CardItem>
-
-            <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
-         <Button small onPress={() => Linking.openURL('tel:704-335-2037') }
-      title="support@example.com" style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
-           <Text uppercase={false}>Call Danae Kaupp</Text>
-         </Button>
-
-       </View>
-          </Card>
-
-          <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 5}}>
+            <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 5}}>
               <Text style={{fontSize: 15, color: 'grey' }}>
-                Copy{'\u00A9'} IAHSP. All Rights Reserved.
+                {'\u00A9'} IAHSP. All Rights Reserved.
               </Text>
             </View>
-
         </Content>
-
       </ScrollView>
     );
   }

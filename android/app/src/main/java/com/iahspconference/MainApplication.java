@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.iahspconference;
 
 import android.app.Application;
 
