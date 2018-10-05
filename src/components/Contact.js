@@ -41,7 +41,7 @@ export default class Contact extends Component {
 
               <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
                 <Button small
-                    onPress={() => Linking.openURL('tel:844-IAHSP99')}
+                    onPress={() => Linking.openURL('tel:8444247799')}
                     style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
                   <Text uppercase={false}>Call</Text>
                 </Button>
