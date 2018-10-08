@@ -56,8 +56,7 @@ export default class Sponsors extends Component {
             <SponsorBlock src={require('../images/sponsor-logos/gold/uma-home-decor.jpg')} />            
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/uttermost.png')} />
-            <SponsorBlock />
+            <SponsorBlockSingle src={require('../images/sponsor-logos/gold/uttermost.png')} />
           </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Silver Sponsors">
@@ -70,10 +69,8 @@ export default class Sponsors extends Component {
             <SponsorBlock src={require('../images/sponsor-logos/silver/stagency-logo.png')} />
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/silver/staging-studio-logo.png')} />            
-          </SponsorRow>
-          <SponsorRow>
-            <SponsorBlockSingle src={require('../images/sponsor-logos/silver/viberent-landscape-logo.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/silver/staging-studio-logo.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/silver/viberent-landscape-logo.png')} />
           </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Bronze Sponsors">
