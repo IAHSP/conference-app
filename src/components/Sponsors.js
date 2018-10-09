@@ -32,28 +32,31 @@ export default class Sponsors extends Component {
             <SponsorBlock src={require('../images/sponsor-logos/gold/cort-furniture-rental.jpg')} />
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/d-w-silks.jpg')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/the-original-cubiqz-cardboard-furniture-for-homestaging.jpg')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/d-w-silks.jpg')} />            
+          </SponsorRow>
+          <SponsorRow>
             <SponsorBlock src={require('../images/sponsor-logos/gold/elk-group-international.jpg')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/europe-2-you-curate-a-life-well-lived.png')} />            
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/europe-2-you-curate-a-life-well-lived.png')} />
             <SponsorBlock src={require('../images/sponsor-logos/gold/ollix-jla-home.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/paragon-logo.jpg')} />            
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/paragon-logo.jpg')} />
             <SponsorBlock src={require('../images/sponsor-logos/gold/propac-images.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/props-america.jpg')} />            
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/props-america.jpg')} />
             <SponsorBlock src={require('../images/sponsor-logos/gold/rave-staging-business-training.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/srm-staging-policy-logo.jpg')} />            
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/srm-staging-policy-logo.jpg')} />
             <SponsorBlock src={require('../images/sponsor-logos/gold/uma-enterprises-logo.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/gold/uma-home-decor.jpg')} />            
           </SponsorRow>
           <SponsorRow>
-            <SponsorBlock src={require('../images/sponsor-logos/gold/uma-home-decor.jpg')} />
-            <SponsorBlock src={require('../images/sponsor-logos/gold/uttermost.png')} />
+            <SponsorBlockSingle src={require('../images/sponsor-logos/gold/uttermost.png')} />
           </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Silver Sponsors">
@@ -67,10 +70,7 @@ export default class Sponsors extends Component {
           </SponsorRow>
           <SponsorRow>
             <SponsorBlock src={require('../images/sponsor-logos/silver/staging-studio-logo.png')} />
-            <SponsorBlock src={require('../images/sponsor-logos/silver/the-original-cubiqz-cardboard-furniture-for-homestaging.jpg')} />
-          </SponsorRow>
-          <SponsorRow>
-            <SponsorBlockSingle src={require('../images/sponsor-logos/silver/viberent-landscape-logo.png')} />
+            <SponsorBlock src={require('../images/sponsor-logos/silver/viberent-landscape-logo.png')} />
           </SponsorRow>
         </SponsorCard>
         <SponsorCard title="Bronze Sponsors">
