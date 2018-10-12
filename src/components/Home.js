@@ -9,9 +9,9 @@ export default class Home extends Component {
 
         {/* Centering items */}
         <View style={{ paddingBottom: 5, alignItems: 'center' }}>
-          <Image source={require('../public/images/home/2018-conference-expo-logo.png')} resizeMode={ "contain" } style={{ width: 150, height: 150 }} />          
+          <Image source={require('../public/images/home/2018-conference-expo-logo.png')} resizeMode={ "contain" } style={{ width: 240, height: 240 }} />          
                 
-          <Text style={{ marginBottom: 3, fontSize: 12, fontWeight: "bold" }}>
+          <Text style={{ marginBottom: 3, fontWeight: "bold" }}>
             2018 Educational Conference and Expo!
           </Text>
 
@@ -19,7 +19,7 @@ export default class Home extends Component {
             Oct 18-20, 2018 - Charlotte, NC
           </Text>
 
-          <Text style={{ fontSize: 12, marginBottom: 15, width: 320 }}>
+          <Text style={{ marginBottom: 15 }}>
             The International Association of Home Staging Professionals&reg; (IAHSP&reg;) is excited to 
             host this high level educational event for top Home Staging business owners worldwide! Join 
             colleagues to learn, share and grow a successful business that has longevity and 
@@ -32,7 +32,7 @@ export default class Home extends Component {
 
         {/* Centering buttons */}
         <View style={{ flexDirection: "row", justifyContent: 'center' }}>
-          <Button small onPress={ ()=>{ Linking.openURL('https://www.facebook.com/InternationalAssociationofHomeStagingProfessionals/')}} style={{ marginRight: 5, backgroundColor: '#EAA825' }}>
+          <Button small onPress={ ()=>{ Linking.openURL('https://www.facebook.com/InternationalAssociationofHomeStagingProfessionals/')}} style={{ marginBottom: 15, backgroundColor: '#EAA825' }}>
             <Text uppercase={false}>Share on Facebook</Text>
           </Button>
         </View>
