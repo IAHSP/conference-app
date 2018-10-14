@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "build-ios": "rm -rf ios/ android/ && react-native eject && rm -rf ./ios/IAHSPConference/Base.lproj && cp -r ./assets/ios/IAHSPConference/Base.lproj ./ios/IAHSPConference/Base.lproj && rm -rf ./ios/IAHSPConference/Images.xcassets && cp -r ./assets/ios/IAHSPConference/Images.xcassets ./ios/IAHSPConference/Images.xcassets && react-native link",
+    "build-ios": "rm -rf ios/ && react-native eject && rm -rf ./ios/IAHSPConference/Base.lproj && cp -r ./assets/ios/IAHSPConference/Base.lproj ./ios/IAHSPConference/Base.lproj && rm -rf ./ios/IAHSPConference/Images.xcassets && cp -r ./assets/ios/IAHSPConference/Images.xcassets ./ios/IAHSPConference/Images.xcassets && react-native link",
     "ios": "react-native run-ios",
     "ipad": "react-native run-ios --simulator='iPad Pro (12.9-inch)'",
     "test": "jest"
