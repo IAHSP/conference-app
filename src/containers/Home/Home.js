@@ -9,7 +9,7 @@ export default class Home extends Component {
 
         {/* Centering items */}
         <View style={{ paddingBottom: 5, alignItems: 'center' }}>
-          <Image source={require('../public/images/home/2018-conference-expo-logo.png')} resizeMode={ "contain" } style={{ width: 240, height: 240 }} />          
+          <Image source={require('../../public/images/home/2018-conference-expo-logo.png')} resizeMode={ "contain" } style={{ width: 240, height: 240 }} />          
                 
           <Text style={{ marginBottom: 3, fontWeight: "bold" }}>
             2018 Educational Conference and Expo!
