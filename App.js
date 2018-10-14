@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Body, Container, Header, Content, Tab, Tabs, Title, View } from 'native-base';
 
-import Home from './src/components/Home';
-import Schedule from './src/components/Schedule';
-import Contact from './src/components/Contact';
-import Sponsors from './src/components/Sponsors';
+import Home from './src/containers/Home/Home';
+import Schedule from './src/containers/Home/Schedule';
+import Contact from './src/containers/Home/Contact';
+import Sponsors from './src/containers/Home/Sponsors';
 
 export default class App extends Component {
   constructor(props) {

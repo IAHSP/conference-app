@@ -3,17 +3,6 @@ import { ScrollView, Linking } from 'react-native';
 import { Content, Card, CardItem, Text, Body, View, Button } from "native-base";
 
 export default class Contact extends Component {
-
-  // helper method for mailto and phone call
-  static async openURL(url: string): Promise<void> {
-      try {
-        await Linking.openURL(url);
-      } catch (error) {
-        console.log(error);
-      }
-  }
-
-
   render() {
     return (
       <ScrollView style={{flex:1}}>
